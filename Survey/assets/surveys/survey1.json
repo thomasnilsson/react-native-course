@@ -1,0 +1,20 @@
+{
+      "studyName": "Test Study",
+      "questions": [
+        {
+          "type": "singleAnswer",
+          "text": "This is a question text",
+          "answers": ["Answer One", "Answer Two", "Answer Three"]
+        },
+        {
+          "type": "singleAnswer",
+          "text": "This is a another question text",
+          "answers": ["Answer One", "Answer Two", "Answer Three"]
+        },
+        {
+          "type": "singleAnswer",
+          "text": "This is a yet another question text",
+          "answers": ["Answer One", "Answer Two", "Answer Three"]
+        }
+      ]
+    }
