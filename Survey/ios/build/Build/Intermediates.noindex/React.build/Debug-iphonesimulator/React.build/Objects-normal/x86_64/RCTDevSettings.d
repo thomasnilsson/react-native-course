@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/thomasnilsson/GitHub/react-native-course/Survey/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
