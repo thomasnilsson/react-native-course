@@ -1,8 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, NavigatorIOS } from "react-native";
 import Question from "./components/Question1.js";
+import survey from "./assets/surveys/survey1.json";
+import { StackNavigator } from "react-navigation";
 
-import survey from "./assets/surveys/survey1.json"
 export default class App extends React.Component {
   fetchJSONSurvey() {
     return fetch("https://facebook.github.io/react-native/movies.json")
@@ -15,12 +16,14 @@ export default class App extends React.Component {
       });
   }
 
-  answerHandler = () => {
+  answerHandler = answer => {
     // let f = this.fetchJSONSurvey()
+    alert(answer);
   };
 
   render() {
-    let q = survey.questions[1]
+    let q = survey.questions[1];
     return <Question question={q} onAnswerGiven={this.answerHandler} />;
   }
 }
+

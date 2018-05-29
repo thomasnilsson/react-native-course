@@ -11,7 +11,7 @@ class Question extends React.Component {
     let text = this.props.question.text;
 
     answerGiven = answer => {
-      this.props.onAnswerGiven();
+      this.props.onAnswerGiven(answer);
       // alert("test")
       console.log(this.props)
       this.setState({
