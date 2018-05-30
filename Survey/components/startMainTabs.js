@@ -4,24 +4,14 @@ const startMainTabs = () => {
   Navigation.startTabBasedApp({
     tabs: [
       {
-        label: "Tab pme",
+        label: "Survey",
         screen: "survey.MainScreen", // this is a registered name for a screen
-        title: "Screen One"
+        title: "Survey"
       },
       {
-        label: "Tab two",
+        label: "Data Collection",
         screen: "survey.SecondScreen", // this is a registered name for a screen
-        title: "Screen Two"
-      },
-      {
-        label: "Tab three",
-        screen: "survey.SecondScreen", // this is a registered name for a screen
-        title: "Screen Two"
-      },
-      {
-        label: "Tab four",
-        screen: "survey.SecondScreen", // this is a registered name for a screen
-        title: "Screen Two"
+        title: "Data Collection"
       },
     ]
   });

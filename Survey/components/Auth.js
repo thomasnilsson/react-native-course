@@ -1,11 +1,35 @@
 import React, { Component } from "react";
-import { StyleSheet, TextInput, View, Text, Button } from "react-native";
+import {
+  TouchableWithoutFeedback,
+  Image,
+  TextInput,
+  View,
+  Text,
+  Button
+} from "react-native";
 
 import startMainTabs from "../components/startMainTabs";
+import survey from "../assets/surveys/survey1.json";
+import styles from "../assets/styles";
 
 class AuthScreen extends Component {
-  onLoginPressed = () => {
-    startMainTabs();
+  authenticate = async () => {
+    const token = "ebf60685-186a-4138-9567-099ab31ed341";
+    const url =
+      "https://sandbox.carp.cachet.dk/auth-service/auth/api/users?access_token=" +
+      token;
+    const rawResponse = await fetch(url, {
+      method: "GET"
+    });
+    return rawResponse.json();
+  };
+
+  onLoginPressed = async () => {
+    let result = await this.authenticate();
+    // console.log(result)
+    if (result) {
+      startMainTabs();
+    }
   };
 
   render() {
@@ -13,43 +37,25 @@ class AuthScreen extends Component {
       <View style={styles.parentContainer}>
         <Text>Login Screen</Text>
         <View style={styles.buttonContainer}>
-          <TextInput style={styles.textField} placeholder="Username" />
-          <TextInput style={styles.textField} placeholder="Password" />
-          <Button onPress={this.onLoginPressed} title="Log in" />
+          <Image
+            source={require("../assets/img/logo.png")}
+            style={{ width: "100%", height: 300, resizeMode: "contain" }}
+          />
+          <TextInput
+            style={styles.textField}
+            textAlign={"center"}
+            placeholder="Username"
+          />
+          <TextInput
+            style={styles.textField}
+            textAlign={"center"}
+            placeholder="Password"
+          />
+          <Button onPress={this.onLoginPressed} title="Login"/>
         </View>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  parentContainer: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    margin: 20
-  },
-  questionContainer: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    paddingTop: 60
-  },
-  buttonContainer: {
-    flex: 2,
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%"
-  },
-  textField: {
-    width: "100%",
-    justifyContent: "center",
-    marginTop: 20,
-    height: 30,
-    borderWidth: 1
-  }
-});
 
 export default AuthScreen;
